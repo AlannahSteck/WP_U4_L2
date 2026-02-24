@@ -35,3 +35,7 @@ body{
 section{
     width: 100vw;
 }
+
+#triesAndWinStatus{
+    font-size: 225%;
+}
