@@ -1,6 +1,7 @@
 *{
     text-align: center;
     font-family: Cherry Bomb One;
+    background-color: linear-gradient(rgb(230, 200, 174), rgb(230, 183, 145));
 }
 
 body{
@@ -9,7 +10,6 @@ body{
 }
 
 #phraseText{
-    background-color: aquamarine;
     height: 20vh;
 }
 
@@ -22,14 +22,6 @@ body{
 #keyboard, #Citrine{
     height: 65vh;
     width: 50vw;
-}
-
-#keyboard{
-    background-color: blueviolet;
-}
-
-#Citrine{
-    background-color: blue;
 }
 
 section{
