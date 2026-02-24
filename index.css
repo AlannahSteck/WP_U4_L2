@@ -1,0 +1,36 @@
+*{
+    text-align: center;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+#phraseText{
+    background-color: aquamarine;
+    height: 20vh;
+}
+
+#ratAndKeys{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#keyboard, #Citrine{
+    height: 65vh;
+    width: 50vw;
+}
+
+#keyboard{
+    background-color: blueviolet;
+}
+
+#Citrine{
+    background-color: blue;
+}
+
+section{
+    width: 100vw;
+}
