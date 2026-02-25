@@ -8,8 +8,19 @@
 
 body{
     padding: 0;
-    margin 1vw;
+    margin : 1vw;
     background-color: #4f220d;
+}
+
+.keyboardRow{
+  display: flex;
+  flex-direction: row;
+}
+
+.keyboardKey{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #phraseText{
@@ -35,6 +46,7 @@ body{
     height: 65vh;
     width: 50vw;
 }
+
 
 section{
     width: 100vw;
