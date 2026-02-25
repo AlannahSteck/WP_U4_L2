@@ -32,6 +32,20 @@ body{
     -webkit-text-stroke: 0.1vw #4f220d;
 }
 
+.clickedKey{
+    border: 0.2vw solid #723318;
+    background-color: #a94b28;
+    color: #713217;
+    -webkit-text-stroke: 0.1vw #723318;
+}
+
+.keyboardKey:hover{
+    border: 0.2vw solid #4f220d;
+    background-color: #aa4c28;
+    color: #e6c8ae;
+}
+
+
 #phraseText{
     height: 20vh;
     font-size: 275%;
@@ -64,4 +78,8 @@ section{
 #triesAndWinStatus{
     font-size: 225%;
     -webkit-text-stroke: 0.1vw #a94b28;
+}
+
+#Citrine{
+    background-color: aquamarine;
 }
