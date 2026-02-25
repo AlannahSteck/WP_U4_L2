@@ -1,17 +1,29 @@
 *{
     text-align: center;
     font-family: Cherry Bomb One;
-    background-color: linear-gradient(rgb(230, 200, 174), rgb(230, 183, 145));
+    -webkit-text-stroke: 0.1vw #a94b28;
+    color: #e6c8ae;
+    display: absolute;
 }
 
 body{
-    margin: 0;
     padding: 0;
+    margin 1vw;
+    background-color: #4f220d;
 }
 
 #phraseText{
     height: 20vh;
+    font-size: 275%;
+    -webkit-text-stroke: 0.175vw #a94b28;
 }
+
+#container{
+  background-image: linear-gradient(to bottom, #ca763f, #db894f);
+  display: absolute;
+  border-radius: 5vw;
+}
+
 
 #ratAndKeys{
     display: flex;
@@ -30,4 +42,5 @@ section{
 
 #triesAndWinStatus{
     font-size: 225%;
+    -webkit-text-stroke: 0.1vw #a94b28;
 }
