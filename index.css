@@ -15,12 +15,21 @@ body{
 .keyboardRow{
   display: flex;
   flex-direction: row;
+  margin: 0.5vw 0vw;
 }
 
 .keyboardKey{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 2vw;
+    margin: 0vw 1.35vw;
+    border: 0.2vw solid #a94b28;
+    border-radius: 1vw;
+    background-color: #e6c8ae;
+    font-size: 150%;
+    color: #aa4c28;
+    -webkit-text-stroke: 0.1vw #4f220d;
 }
 
 #phraseText{
