@@ -18,18 +18,21 @@ body{
   margin: 0.5vw 0vw;
 }
 
-.keyboardKey{
+.keyboardKey, .clickedKey{
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 2vw;
     margin: 0vw 1.35vw;
-    border: 0.2vw solid #a94b28;
     border-radius: 1vw;
-    background-color: #e6c8ae;
     font-size: 150%;
+}
+
+.keyboardKey{
     color: #aa4c28;
     -webkit-text-stroke: 0.1vw #4f220d;
+    background-color: #e6c8ae;
+    border: 0.2vw solid #a94b28;
 }
 
 .clickedKey{
@@ -75,11 +78,22 @@ section{
     width: 100vw;
 }
 
-#triesAndWinStatus{
+.options{
     font-size: 225%;
     -webkit-text-stroke: 0.1vw #a94b28;
 }
 
 #Citrine{
     background-color: aquamarine;
+}
+
+#bottomRow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+a{
+    padding: 0vw;
+    margin: 0vw;
 }
