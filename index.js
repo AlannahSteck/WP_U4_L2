@@ -1,16 +1,18 @@
+var alpha = "abcdef*ghijkl*mnopqr*stuvwx*yz";
+
 function genKeyboard(){
-    const letters = "abcdef*ghijkl*mnopqr*stuvwx*yz"
-    const keyboard = document.getElementById("keyboard")
+    
+    const keyboard = document.getElementById("keyboard");
     let pointer = 0;
 
     for (let i = 0; i < 6; i++){
         const row = document.createElement("div");
         row.className = "keyboardRow";
-        while(letters[pointer] != "*" && pointer < 30){
+        while(alpha[pointer] != "*" && pointer < 30){
             const key = document.createElement("div");
             key.className = "keyboardKey";
-            key.id = letters[pointer];
-            key.textContent = letters[pointer].toUpperCase();
+            key.id = alpha[pointer];
+            key.textContent = alpha[pointer].toUpperCase();
             row.appendChild(key);
             pointer++;
         }
@@ -29,16 +31,27 @@ function genPhrase(){
         "SNFNFSN SNNNFFFFF SNIFF SNIFF SNIFF SNFNFNFNF",
         `We're not on squeaking terms rn`,
         "Rats are not a mice thing to have in your house.",
-        "Live, Laugh, cheese"]
+        "Live, Laugh, cheese"];
 
-        const n = Math.floor(Math.random() * phrases.length)
+    var letters = [];
 
-    const random_phrase = phrases[n];
+    const n = Math.floor(Math.random() * phrases.length);
+
+    const random_phrase = phrases[n].toLowerCase();
     const phrasetext = document.getElementById("phraseText");
     console.log(random_phrase)
     phrasetext.textContent = random_phrase;
 
+    for (i = 0; i < random_phrase.length; i++){
+        if (alpha.includes(random_phrase[i])){
+            if(!letters.includes(random_phrase[i])){
+                letters.push(random_phrase[i]);
+            }
 
+        }
+    }
+
+    console.log(letters)
 
 
 }
