@@ -1,4 +1,6 @@
 var alpha = "abcdef*ghijkl*mnopqr*stuvwx*yz";
+var letters = []; 
+var random_phrase = ""
 
 function genKeyboard(){
     
@@ -33,25 +35,33 @@ function genPhrase(){
         "Rats are not a mice thing to have in your house.",
         "Live, Laugh, cheese"];
 
-    var letters = [];
+    
 
     const n = Math.floor(Math.random() * phrases.length);
 
-    const random_phrase = phrases[n].toLowerCase();
+    random_phrase = phrases[n].toLowerCase();
     const phrasetext = document.getElementById("phraseText");
-    console.log(random_phrase)
+    console.log(random_phrase);
     phrasetext.textContent = random_phrase;
+    let hidden_phrase = "";
 
     for (i = 0; i < random_phrase.length; i++){
+
         if (alpha.includes(random_phrase[i])){
             if(!letters.includes(random_phrase[i])){
                 letters.push(random_phrase[i]);
             }
+            hidden_phrase = hidden_phrase + "_";
 
         }
-    }
 
-    console.log(letters)
+        else{
+             hidden_phrase = hidden_phrase + random_phrase[i]
+        }
+    }
+    phrasetext.textContent = hidden_phrase;
+
+    console.log(letters);
 
 
 }
