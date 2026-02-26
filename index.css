@@ -11,6 +11,7 @@ body{
     margin : 1vw;
     background-color: #4f220d;
     display: fixed;
+    overflow: hidden;
 }
 
 .keyboardRow{

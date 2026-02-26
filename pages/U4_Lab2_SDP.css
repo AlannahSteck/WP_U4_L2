@@ -21,6 +21,7 @@ p{
 body{
     background-color: gray;
     margin: 0vw 8.75vw;
+    overflow: hidden;
 }
 
 section{
