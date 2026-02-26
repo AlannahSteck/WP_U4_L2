@@ -83,8 +83,9 @@ section{
     -webkit-text-stroke: 0.1vw #a94b28;
 }
 
-#Citrine{
-    background-color: aquamarine;
+video{
+    border-radius: 5vw;
+    width: 35vw;
 }
 
 #bottomRow{
