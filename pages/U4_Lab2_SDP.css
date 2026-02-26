@@ -1,0 +1,52 @@
+*{
+    margin: 0vw;
+    padding: 0vw;
+    font-family: Cherry Bomb One;
+    text-align: center;
+}
+
+h1{
+    text-decoration: underline;
+    font-size: 275%;
+}
+
+h3{
+    font-size: 220%;
+}
+
+p{
+    font-size: 180%;
+}
+
+body{
+    background-color: gray;
+    margin: 0vw 8.75vw;
+}
+
+section{
+    display: flex;
+    flex-direction: row;
+    color: darkgray;
+    -webkit-text-stroke: 0.25vw gray;
+}
+
+div{
+    background-color: white;
+    border-radius: 5vw;
+    width: 22.5vw;
+    padding: 2.5;
+    margin: 2.5vw;
+}
+
+#title{
+    font-size: 400%;
+}
+
+a{
+    text-decoration: none;
+}
+
+#title, a{
+    color: rgb(80, 80, 80);
+    -webkit-text-stroke: 0.25vw black;
+}

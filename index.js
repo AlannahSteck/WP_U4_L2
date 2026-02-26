@@ -105,12 +105,12 @@ function keyPress(key){
 
 function gameWin(){
     win_status = document.getElementById("triesAndWinStatus")
-    win_status.textContent = "alannah lowkey you make a win message"
+    win_status.textContent = "Cheese :D (You Win)"
     game_status = false
 }
 
 function gameLose(){
     win_status = document.getElementById("triesAndWinStatus")
-    win_status.textContent = "same thing with the lose one"
+    win_status.textContent = "No Cheese (You Lose)"
     game_status = false
 }
