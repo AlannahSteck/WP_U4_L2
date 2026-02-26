@@ -1,6 +1,7 @@
 var alpha = "abcdef*ghijkl*mnopqr*stuvwx*yz";
 var letters = []; 
 var random_phrase = ""
+var game_status = true
 
 function genKeyboard(){
     
@@ -15,6 +16,7 @@ function genKeyboard(){
             key.className = "keyboardKey";
             key.id = alpha[pointer];
             key.textContent = alpha[pointer].toUpperCase();
+            key.onclick = function(){keyPress(key)};
             row.appendChild(key);
             pointer++;
         }
@@ -24,7 +26,7 @@ function genKeyboard(){
 }
 
 function genPhrase(){
-    const phrases = [`I'm afraid you're ratted your last tatouille`, 
+    const phrases = [`I'm afraid you've ratted your last tatouille`, 
         "my apolocheese", 
         "Sniff sniff sniff hello sniff sniff hi hi sniff",
         "Crazy? I was crazy once",
@@ -62,6 +64,20 @@ function genPhrase(){
     phrasetext.textContent = hidden_phrase;
 
     console.log(letters);
+}
 
+function keyPress(key){
+    const phrasetext = document.getElementById("phraseText");
+    const letter = key.id;
 
+    if(letters.includes(letter)){
+        letters.splice(letters.indexOf(letter),1)
+        console.log(letters)
+        
+        for(let i = 0; i < random_phrase.length; i++){
+            if(random_phrase[i] == letter){
+                phrasetext.textContent = (phrasetext.textContent.slice(0,i) + letter + phrasetext.textContent.slice(i+1))
+            }
+        }
+    }
 }
