@@ -98,6 +98,8 @@ function keyPress(key){
         else{
             try_status = document.getElementById("triesAndWinStatus")
             try_status.textContent = `Tries : ${tries}`
+            document.getElementById("citrineVideo").src = `Resources/index/rat_${tries}.mp4`
+            console.log(document.getElementById("citrineVideo").src)
         }
         }
     }
