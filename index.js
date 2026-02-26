@@ -98,8 +98,7 @@ function keyPress(key){
         else{
             try_status = document.getElementById("triesAndWinStatus")
             try_status.textContent = `Tries : ${tries}`
-            document.getElementById("citrineVideo").src = `Resources/index/rat_${tries}.mp4`
-            console.log(document.getElementById("citrineVideo").src)
+            document.querySelector("video").src = `Resources/index/rat_${tries}.mp4`
         }
         }
     }
@@ -115,6 +114,7 @@ function gameLose(){
     win_status = document.getElementById("triesAndWinStatus")
     win_status.textContent = "No Cheese (You Lose)"
     game_status = false
+    document.querySelector("video").src = `Resources/index/rat_lose.mp4`
 }
 
 function reset(){
