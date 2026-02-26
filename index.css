@@ -10,6 +10,7 @@ body{
     padding: 0;
     margin : 1vw;
     background-color: #4f220d;
+    display: fixed;
 }
 
 .keyboardRow{
@@ -51,13 +52,13 @@ body{
 
 #phraseText{
     height: 20vh;
-    font-size: 275%;
+    font-size: 250%;
     -webkit-text-stroke: 0.175vw #a94b28;
 }
 
 #container{
   background-image: linear-gradient(to bottom, #ca763f, #db894f);
-  display: absolute;
+  display: fixed;
   border-radius: 5vw;
 }
 
@@ -97,4 +98,6 @@ video{
 a{
     padding: 0vw;
     margin: 0vw;
+    text-decoration: none;
+    font-size: 200%;
 }
