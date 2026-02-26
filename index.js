@@ -114,3 +114,7 @@ function gameLose(){
     win_status.textContent = "No Cheese (You Lose)"
     game_status = false
 }
+
+function reset(){
+    window.location.reload();
+}
