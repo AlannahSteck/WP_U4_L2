@@ -3,6 +3,8 @@
     padding: 0vw;
     font-family: Cherry Bomb One;
     text-align: center;
+    -webkit-text-stroke: 0.1vw #4f220d;
+    color: #a94b28;
 }
 
 h1{
@@ -16,10 +18,11 @@ h3{
 
 p{
     font-size: 180%;
+    margin: 7vw 0vw;
 }
 
 body{
-    background-color: gray;
+    background-image: linear-gradient(to bottom, #ca763f, #db894f);
     margin: 0vw 8.75vw;
     overflow: hidden;
 }
@@ -27,12 +30,10 @@ body{
 section{
     display: flex;
     flex-direction: row;
-    color: darkgray;
-    -webkit-text-stroke: 0.25vw gray;
 }
 
 div{
-    background-color: white;
+    background-color: #e6c8ae;
     border-radius: 5vw;
     width: 22.5vw;
     padding: 2.5;
@@ -47,7 +48,7 @@ a{
     text-decoration: none;
 }
 
-#title, a{
-    color: rgb(80, 80, 80);
-    -webkit-text-stroke: 0.25vw black;
+#title, #returnText{
+    color: #e6c8ae;
+    -webkit-text-stroke: 0.1vw #a94b28;
 }
