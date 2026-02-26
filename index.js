@@ -2,6 +2,7 @@ var alpha = "abcdef*ghijkl*mnopqr*stuvwx*yz";
 var letters = []; 
 var random_phrase = ""
 var game_status = true
+var tries = 7
 
 function genKeyboard(){
     
@@ -67,6 +68,7 @@ function genPhrase(){
 }
 
 function keyPress(key){
+    if(game_status){
     const phrasetext = document.getElementById("phraseText");
     const letter = key.id;
 
@@ -79,5 +81,36 @@ function keyPress(key){
                 phrasetext.textContent = (phrasetext.textContent.slice(0,i) + letter + phrasetext.textContent.slice(i+1))
             }
         }
+        key.className = "clickedKey"
+        key.onclick = null
+        if (letters.length == 0){
+            gameWin()
+        }
     }
+
+    else{
+        key.className = "clickedKey"
+        key.onclick = null
+        tries = tries - 1
+        if(tries == 0){
+            gameLose()
+        }
+        else{
+            try_status = document.getElementById("triesAndWinStatus")
+            try_status.textContent = `Tries : ${tries}`
+        }
+        }
+    }
+}
+
+function gameWin(){
+    win_status = document.getElementById("triesAndWinStatus")
+    win_status.textContent = "alannah lowkey you make a win message"
+    game_status = false
+}
+
+function gameLose(){
+    win_status = document.getElementById("triesAndWinStatus")
+    win_status.textContent = "same thing with the lose one"
+    game_status = false
 }
