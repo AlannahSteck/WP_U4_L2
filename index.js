@@ -44,7 +44,6 @@ function genPhrase(){
 
     random_phrase = phrases[n].toLowerCase();
     const phrasetext = document.getElementById("phraseText");
-    console.log(random_phrase);
     phrasetext.textContent = random_phrase;
     let hidden_phrase = "";
 
@@ -64,7 +63,6 @@ function genPhrase(){
     }
     phrasetext.textContent = hidden_phrase;
 
-    console.log(letters);
 }
 
 function keyPress(key){
@@ -74,7 +72,6 @@ function keyPress(key){
 
     if(letters.includes(letter)){
         letters.splice(letters.indexOf(letter),1)
-        console.log(letters)
         
         for(let i = 0; i < random_phrase.length; i++){
             if(random_phrase[i] == letter){
