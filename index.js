@@ -108,6 +108,7 @@ function gameWin(){
     win_status = document.getElementById("triesAndWinStatus")
     win_status.textContent = "Cheese :D (You Win)"
     game_status = false
+    document.querySelector("video").src = `Resources/index/rat_win.mp4`
 }
 
 function gameLose(){
